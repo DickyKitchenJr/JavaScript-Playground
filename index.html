@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website used to house various small JavaScript projects for demonstration purposes." />
+    <title>JavaScript Play Area</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="JSPlayground.js" defer></script>
+</head>
+<body>
+    <div class="background-img-holder">
+        <header>
+        <h1>Welcome to my JavaScript Play Area</h1>
+        </header>
+    <!--HSL Linear Gradient Section-->
+        <div class="box1">
+            <h2>Want to change the background colors?</h2>
+            <button id="clickmeHSL">Click Me</button>
+            <p>Current HSL values:</p>
+            <ul>
+                <li>HSL 1 = <span id="color1">hsl(0, 0%, 100%)</span></li>
+                <li>HSL 2 = <span id="color2">hsl(0, 0%, 100%)</span></li>
+                <li>HSL 3 = <span id="color3">hsl(0, 0%, 100%)</span></li>
+            </ul>
+            <button id="resetHSL">Reset</button>
+            <br>
+            <details>
+                <summary>Why This Was Built</summary>
+                <p>While building out my first landing and portfolio pages, I included a three color linear gradient background.<br>
+                As I researched various color combinations, I would occasionally experiment with different colors just to see the result.<br>
+                That gave me the idea to build a project that randomly assigns Hue/Saturation/Lightness (HSL) values and displays the combinations both in text and its color gradient on the background of the page.<br>
+                The combinations will sometimes produce beatiful displays, while other times creating a muddled mess (hence the reset button).<br>
+                By providing the HSL values, users can duplicate the display on their own.</p>
+            </details>
+        </div>
+    <!--Dad Joke Section-->
+        <div class="box2">
+            <h2>How about a Dad Joke?</h2>
+            <button id="jokebutton">Click Me</button>
+            <p id="joke">Get ready for a chuckle!</p>
+            <details>
+                <summary>Why This Was Built</summary>
+                <p>I'd love to have some deep thoughtful reason for building this, but this was all about fun.<br>
+                I often sit around with friends and family trading cheesy jokes, and we often find ourselves searching the interet for new ones.<br>
+                So really, it was only logical that I built my own joke randomizer that pulls from an array of jokes.<br>
+                Bookmark this page so you can use this at your next gathering &#128513;</p>
+            </details>
+        </div>
+    <!--Non-Sense Name Generator Section-->
+        <div class="box3">
+            <h2>Need a name?</h2>
+            <p class="name-ad">Are you writing a fantasy novel and need a name for your character?<br>
+            Not sure what to have people call you at the next D&D game?<br>
+            Or perhaps you just need a name for your baby?</p>
+            <button id="namebutton">Click Me</button>
+            <p class="new-name">Here is your AMAZING name:</p>
+            <p id="nameme">______</p>
+            <details>
+                <summary>Why This Was Built</summary>
+                <p>In addition to being a developer, I'm also an author of fictional books.<br>
+                Because of this, I've come across many other authors and writers, including many fantasy writers.<br>
+                Despite not writing in the fantasy genre, I've always found it interesting how unique some of the characters names can be.<br>
+                That made me question what makes a name a name, which led me to this project.<br>
+                I wanted to create a project that would randomly display something akin to a name that met the following criteria:
+                <ul>
+                    <li>A length of between 2 and 9 letters</li>
+                    <li>First letter capitalized</li>
+                    <li>Vowels limited to 2 next to each other</li>
+                    <li>Consonants next to each other must form a digraph</li>
+                </ul>
+                The problem solving aspect of this was the real draw for me to create this project.</p>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

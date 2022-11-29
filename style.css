@@ -1,0 +1,56 @@
+.background-img-holder {
+  background-image: url(JSlogo.png);
+  background-repeat: round;
+  background-size: 30%;
+}
+
+header {
+  text-align: center;
+  padding-top: 1.5vw;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: block;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  backdrop-filter: sepia();
+  border: 2px solid black;
+  width: 70%;
+  margin: 7vw auto;
+  padding: 1vw;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  backdrop-filter: hue-rotate(80deg);
+  font-weight: bold;
+  border-top: 3px solid hsl(54, 100%, 68%);
+  border-left: 3px solid hsl(54, 99%, 38%);
+  border-bottom: 3px solid hsl(54, 100%, 68%);
+  border-right: 3px solid hsl(54, 99%, 38%);
+}
+
+button {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+h2,
+#joke,
+.name-ad,
+.new-name,
+#nameme {
+  text-align: center;
+}
+
+#nameme {
+  font-size: 1.75rem;
+  color: teal;
+}
+
+details {
+  margin-bottom: 1rem;
+}
